@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Issue from './Issue'
+import styles from './IssueList.module.css'
 
 export default function IssueList() {
     //will hold the array of issues from the API
@@ -18,7 +19,7 @@ export default function IssueList() {
 
 
     return (
-        <div>
+        <div className={styles.issueList}>
 
             {issueArray.map((issue) => {
                 console.log(issue)
